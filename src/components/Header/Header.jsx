@@ -24,9 +24,9 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full z-10 transition-all duration-500 ease-in-out ${
+      className={`fixed w-full z-50 transition-all duration-500 ease-in-out ${
         isScrolled
-          ? 'bg-gradient-to-r from-[#73b34f] via-[#479354] to-[#2c544a] text-white shadow-lg'
+          ? 'bg-white text-black shadow-lg'
           : 'bg-transparent text-black'
       }`}
     >
@@ -42,13 +42,13 @@ function Header() {
               href={`#${item.toLowerCase()}`}
               key={item}
               className={`relative text-sm group transition duration-300 py-1 ease-in-out ${
-                isScrolled ? 'text-white' : 'text-black'
+                isScrolled ? 'text-black' : 'text-black'
               }`}
             >
               {item}
               <span
                 className={`absolute left-0 bottom-0 h-1 w-full bg-transparent group-hover:bg-green-600 transition-all duration-500 ease-in-out transform group-hover:scale-x-100 scale-x-0 origin-left ${
-                  isScrolled ? 'group-hover:bg-white' : 'group-hover:bg-green-600'
+                  isScrolled ? 'group-hover:bg-green-600' : 'group-hover:bg-green-600'
                 }`}
               ></span>
             </a>

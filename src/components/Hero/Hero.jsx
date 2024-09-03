@@ -6,7 +6,7 @@ import styles from './hero.module.css'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen z-0 py-4 flex flex-col lg:flex-row items-center gap-5 px-6 lg:px-12 lg:py-24 bg-white">
+    <section id="home" className="relative h-screen z-0 py-4 flex flex-col lg:flex-row items-center gap-5 px-6 lg:px-12 lg:py-24">
       {/* Sobreposição para contraste */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-50 via-transparent to-gray-50 opacity-30"></div>
       

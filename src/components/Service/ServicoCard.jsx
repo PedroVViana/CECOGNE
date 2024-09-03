@@ -10,7 +10,7 @@ const ServicoCard = ({ titulo, descricao, nomes, desativarDetalhes }) => {
   };
 
   return (
-    <div className="relative bg-gradient-to-br from-[#ffffff] via-[#f3f4f6] to-[#e5e7eb] text-black p-6 rounded-lg shadow-lg transition-all duration-300 w-full h-auto grid grid-rows-[auto_1fr_auto]">
+    <div className="relative bg-white text-black border border-gray-200 p-6 rounded-lg shadow-lg transition-all duration-300 w-full h-auto grid grid-rows-[auto_1fr_auto]">
       <div className="text-center">
         <h3 className="text-xl sm:text-2xl font-bold mb-2">{titulo}</h3>
         <p className="text-base sm:text-lg mb-4">{descricao}</p>
@@ -19,7 +19,7 @@ const ServicoCard = ({ titulo, descricao, nomes, desativarDetalhes }) => {
       <div className="flex flex-row gap-4 mt-4 w-full justify-center items-center">
         {!desativarDetalhes && (
           <button
-            className="bg-[#45b5d8] text-white text-sm sm:text-base py-2 px-4 rounded-lg shadow-lg hover:bg-[#36a0c6] transition-all duration-300 hover:scale-105"
+            className="bg-[#479354] text-white text-sm sm:text-base py-2 px-4 rounded-lg shadow-lg hover:bg-[#73b34f] transition-all duration-300 hover:scale-105"
             onClick={toggleExpandir}
           >
             {expandido ? "Fechar Detalhes" : "Mais Detalhes"}
@@ -43,7 +43,7 @@ const ServicoCard = ({ titulo, descricao, nomes, desativarDetalhes }) => {
               ))}
             </ul>
             <button
-              className="bg-[#45b5d8] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#36a0c6] transition-all duration-300 hover:scale-105"
+              className="bg-[#479354] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#73b34f] transition-all duration-300 hover:scale-105"
               onClick={toggleExpandir}
             >
               Fechar

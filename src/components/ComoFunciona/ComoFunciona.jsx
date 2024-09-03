@@ -17,7 +17,7 @@ const ComoFunciona = () => {
   };
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-white text-white relative">
+    <section className="py-20 px-6 md:px-12 text-white relative">
     <div className="container mx-auto text-center">
       <h2 className="text-4xl md:text-5xl font-extrabold mb-12 md:mb-16 text-[#333] transition-opacity duration-500 ease-in-out opacity-100">
         Como Funciona

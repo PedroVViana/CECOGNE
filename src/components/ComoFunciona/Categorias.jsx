@@ -9,8 +9,8 @@ const Categorias = ({ categorias, categoriaSelecionada, onCategoriaClick }) => {
           onClick={() => onCategoriaClick(categoria)}
           className={`text-left px-6 py-3 rounded-lg transition-transform duration-300 ease-in-out transform ${
             categoria === categoriaSelecionada
-              ? 'bg-[#a5cc3a] text-white shadow-xl scale-105'
-              : 'bg-[#59c8f0] text-white border border-gray-300 hover:bg-[#a5cc3a]'
+              ? 'bg-[#73b34f] text-white shadow-xl scale-105'
+              : 'bg-[#479354] text-white border border-gray-300 hover:bg-[#73b34f]'
           } hover:scale-105 focus:outline-none`}
         >
           {categorias[categoria].titulo}

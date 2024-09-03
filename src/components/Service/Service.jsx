@@ -15,7 +15,7 @@ const Service = () => {
     },
     {
       titulo: "Supervisão",
-      descricao: "Acompanhamento e orientação de profissionais.",
+      descricao: "Acompanhamento e orientação.",
       nomes: ["Individual", "Grupo"],
     },
     {
@@ -23,24 +23,47 @@ const Service = () => {
       descricao: "Palestras educacionais e motivacionais.",
       desativarDetalhes: true, // Desativa o botão "Mais Detalhes"
     },
+    {
+      titulo: "Grupo de Estudos",
+      descricao: "Um espaço para aprofundar conhecimentos.",
+      nomes: ["Psicometria", "Neurociência"],
+    },
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-gradient-to-r from-[#59c8f0] to-[#45b5d8] text-white">
+    <section className="py-20 px-6 md:px-12 text-[#333]">
       <div className="container mx-auto text-center">
         <h2 className="text-5xl font-extrabold mb-12 md:mb-16 tracking-wide text-shadow-lg">
           Nossos Serviços
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-          {servicos.map((servico, index) => (
-            <ServicoCard
-              key={index}
-              titulo={servico.titulo}
-              descricao={servico.descricao}
-              nomes={servico.nomes}
-              desativarDetalhes={servico.desativarDetalhes} // Passa a prop para desativar o botão
-            />
-          ))}
+        {/* Grid configurado para o layout desejado */}
+        <div className="grid gap-8">
+          {/* Primeira linha com 2 cards lado a lado ocupando 50% da largura cada */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {servicos.slice(0, 2).map((servico, index) => (
+              <div key={index} className="w-full">
+                <ServicoCard
+                  titulo={servico.titulo}
+                  descricao={servico.descricao}
+                  nomes={servico.nomes}
+                  desativarDetalhes={servico.desativarDetalhes}
+                />
+              </div>
+            ))}
+          </div>
+          {/* Segunda linha com 3 cards, cada um ocupando 1/3 da largura em telas grandes */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {servicos.slice(2).map((servico, index) => (
+              <div key={index} className="w-full">
+                <ServicoCard
+                  titulo={servico.titulo}
+                  descricao={servico.descricao}
+                  nomes={servico.nomes}
+                  desativarDetalhes={servico.desativarDetalhes}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
