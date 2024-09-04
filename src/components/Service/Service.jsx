@@ -19,8 +19,8 @@ const Service = () => {
       nomes: ["Individual", "Grupo"],
     },
     {
-      titulo: "Palestras",
-      descricao: "Palestras educacionais e motivacionais.",
+      titulo: "Palestras e cursos",
+      descricao: "Palestras e cursos educacionais e motivacionais.",
       desativarDetalhes: true, // Desativa o botão "Mais Detalhes"
     },
     {

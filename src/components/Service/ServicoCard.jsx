@@ -13,7 +13,7 @@ const ServicoCard = ({ titulo, descricao, nomes, desativarDetalhes }) => {
     <div className="relative bg-white text-black border border-gray-200 p-6 rounded-lg shadow-lg transition-all duration-300 w-full h-auto grid grid-rows-[auto_1fr_auto]">
       <div className="text-center">
         <h3 className="text-xl sm:text-2xl font-bold mb-2">{titulo}</h3>
-        <p className="text-base sm:text-lg mb-4">{descricao}</p>
+        <p className="text-sm mb-4">{descricao}</p>
       </div>
 
       <div className="flex flex-row gap-4 mt-4 w-full justify-center items-center">
